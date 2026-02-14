@@ -1,0 +1,39 @@
+RewriteEngine On
+Options -Indexes
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteCond $1 !^(css|js|img|inc|diller)
+
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteRule ^topic/([0-9a-zA-Z-_]+)-([0-9]+)-([0-9]+) topic.php?id=$2&sayfa=$3&ceo=$1 [L,QSA]
+
+RewriteRule ^topic/([0-9a-zA-Z-_]+)-([0-9]+) topic.php?id=$2&ceo=$1 [L,QSA]
+
+RewriteRule ^topics/([0-9a-zA-Z-_]+)-([0-9]+)-([0-9]+) topics.php?id=$2&sayfa=$3&ceo=$1 [L,QSA]
+
+RewriteRule ^topics/([0-9a-zA-Z-_]+)-([0-9]+) topics.php?id=$2&ceo=$1 [L,QSA]
+
+RewriteRule ^profil/([0-9a-zA-Z-_]+)-([0-9]+) profil.php?k=$1&id=$2 [L,QSA]
+
+
+RewriteRule ^conversations/([0-9]+) conversations.php?sayfa=$1 [L,QSA]
+
+RewriteRule ^conversations/ conversations.php [L,QSA]
+
+RewriteRule ^conversation/([0-9a-zA-Z-_]+)-([0-9]+)-([0-9]+) conversation.php?id=$2&sayfa=$3&ceo=$1 [L,QSA]
+
+RewriteRule ^conversation/([0-9a-zA-Z-_]+)-([0-9]+) conversation.php?id=$2&ceo=$1 [L,QSA]
+
+RewriteRule .*\.(eg|beg)$ sys/ [R,NC]
+
+
+RewriteRule ^anasayfa index.php [L,QSA]
+
+
+ErrorDocument 404 /sys/404?d404=1
+
+RewriteRule ^yasakli /sys/yasakli.php [L,QSA]
+RewriteRule ^ara /sys/ara.php [L,QSA]
+

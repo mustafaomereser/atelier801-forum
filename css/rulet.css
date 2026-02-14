@@ -1,0 +1,161 @@
+   .r-roulette {
+       width: 300px;
+       height: 300px;
+       border-radius: 50%;
+       border: 4px solid #ccc;
+       overflow: hidden !important;
+       bottom: 50%;
+       right: 50%;
+       transform: translate(0%, 0%);
+       -webkit-user-select: none;
+       user-select: none;
+       margin: 0 auto 60px;
+   }
+	
+    .r-roulette .area {
+        height: 50%;
+        position: absolute;
+        width: 18%;
+        right: 50%;
+        text-align: center;
+        box-sizing: border-box;
+        transform-origin: bottom;
+        overflow: hidden;
+    }
+    .r-roulette .area:nth-child(1) {
+        transform: translate(50%, 0) rotate(20deg);
+    }
+    .r-roulette .area:nth-child(1) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(2) {
+        transform: translate(50%, 0) rotate(40deg);
+    }
+    .r-roulette .area:nth-child(2) .background {
+        border-color: #FF9800 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(3) {
+        transform: translate(50%, 0) rotate(60deg);
+    }
+    .r-roulette .area:nth-child(3) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(4) {
+        transform: translate(50%, 0) rotate(80deg);
+    }
+    .r-roulette .area:nth-child(4) .background {
+        border-color: #FFC107 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(5) {
+        transform: translate(50%, 0) rotate(100deg);
+    }
+    .r-roulette .area:nth-child(5) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(6) {
+        transform: translate(50%, 0) rotate(120deg);
+    }
+    .r-roulette .area:nth-child(6) .background {
+        border-color: #FF9800 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(7) {
+        transform: translate(50%, 0) rotate(140deg);
+    }
+    .r-roulette .area:nth-child(7) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(8) {
+        transform: translate(50%, 0) rotate(160deg);
+    }
+    .r-roulette .area:nth-child(8) .background {
+        border-color: #FFC107 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(9) {
+        transform: translate(50%, 0) rotate(180deg);
+    }
+    .r-roulette .area:nth-child(9) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(10) {
+        transform: translate(50%, 0) rotate(200deg);
+    }
+    .r-roulette .area:nth-child(10) .background {
+        border-color: #FF9800 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(11) {
+        transform: translate(50%, 0) rotate(220deg);
+    }
+    .r-roulette .area:nth-child(11) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(12) {
+        transform: translate(50%, 0) rotate(240deg);
+    }
+    .r-roulette .area:nth-child(12) .background {
+        border-color: #FFC107 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(13) {
+        transform: translate(50%, 0) rotate(260deg);
+    }
+    .r-roulette .area:nth-child(13) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(14) {
+        transform: translate(50%, 0) rotate(280deg);
+    }
+    .r-roulette .area:nth-child(14) .background {
+        border-color: #FF9800 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(15) {
+        transform: translate(50%, 0) rotate(300deg);
+    }
+    .r-roulette .area:nth-child(15) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(16) {
+        transform: translate(50%, 0) rotate(320deg);
+    }
+    .r-roulette .area:nth-child(16) .background {
+        border-color: #FFC107 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(17) {
+        transform: translate(50%, 0) rotate(340deg);
+    }
+    .r-roulette .area:nth-child(17) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(18) {
+        transform: translate(50%, 0) rotate(360deg);
+    }
+    .r-roulette .area:nth-child(18) .background {
+        border-color: #FF5722 transparent transparent transparent;
+    }
+    .r-roulette .area:nth-child(19) {
+        transform: translate(50%, 0) rotate(380deg);
+    }
+    .r-roulette .area:nth-child(19) .background {
+        border-color: #FFFFFF transparent transparent transparent;
+    }
+    .r-roulette .area .background {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 150px 27px 0 27px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .r-roulette .area .content {
+        position: relative;
+        display: inline-block;
+        margin: 8px 0 0 0;
+    }
+    .r-roulette .area .content img {
+        width: 50%;
+        height: auto;
+    }
+	
+
+	
+	

@@ -1,0 +1,318 @@
+.s-layout__content{ 
+	justify-content:center; 
+	align-items:center; 
+	flex:1; 
+	display:table; 
+	min-height:1900px
+} 
+
+.s-sidebar__nav{ 
+	position:absolute; 
+	top:0; 
+	left:-17em; 
+	overflow:hidden; 
+	transition:all .3s ease-in; 
+	width:15em; 
+	background:#243b4d; 
+	color:rgba(255,255,255,.7); 
+	z-index:1; 
+	height:100%
+} 
+
+.s-sidebar__nav ul{ 
+	position:absolute; 
+	top:4em; 
+	left:0; 
+	padding:0; 
+	width:15em; 
+	margin:0; 
+	list-style-type:none
+} 
+
+.s-sidebar__nav ul li{ 
+	width:100%
+} 
+
+.s-sidebar__nav ul li i{ 
+	margin-left:-5px; 
+	margin-right:5px; 
+	color:#999
+} 
+
+.s-sidebar__nav ul li.header{ 
+	padding-top:5px; 
+	padding-bottom:5px
+} 
+
+.s-sidebar__nav ul li.header:hover{ 
+	background:#4d6276
+} 
+
+.collapse-forum-actu{ 
+	min-height:0
+} 
+
+.s-sidebar__nav ul li.header span{ 
+	font-weight:700; 
+	color:#fff; 
+	margin-left:10%
+} 
+
+.s-sidebar__nav ul hr{ 
+	margin:0
+} 
+
+.s-sidebar__nav-link{ 
+	position:relative; 
+	display:inline-block; 
+	width:100%; 
+	height:2em
+} 
+
+.s-sidebar__nav-link span{ 
+	position:absolute; 
+	top:50%; 
+	left:3em; 
+	transform:translateY(-50%); 
+	font-style:normal; 
+	color:#a5a5a5
+} 
+
+.s-sidebar__nav-link span i.fa{ 
+	color:#fff
+} 
+
+.s-sidebar__nav-link:hover{ 
+	background:#4d6276
+} 
+
+.s-sidebar__nav-link:hover span{ 
+	color:#fff
+} 
+
+.s-sidebar__nav-link.selected{ 
+	background-color:#1d2937
+} 
+
+.s-sidebar__nav-link> 
+i{ 
+	position:absolute; 
+	top:0; 
+	left:0; 
+	display:inline-block; 
+	width:4em; 
+	height:4em
+} 
+
+.s-sidebar__nav-link> 
+i::before{ 
+	position:absolute; 
+	top:50%; 
+	left:50%; 
+	transform:translate(-50%,-50%)
+} 
+
+.s-sidebar__trigger{ 
+	display:block!important
+} 
+
+.chart{ 
+	min-height:400px; 
+	position:relative
+} 
+
+.chart.col-1{ 
+	display:inline-block; 
+	min-height:209px; 
+	width:100%
+} 
+
+.chart.col-2{ 
+	display:inline-block; 
+	min-height:250px; 
+	width:100%
+} 
+
+.chart.header{ 
+	display:table-cell; 
+	padding:6px; 
+	color:#d3d3d3; 
+	font-size:25px; 
+	letter-spacing:1px
+} 
+
+.popup{ 
+	position:relative; 
+	display:inline-block; 
+	cursor:pointer; 
+	-webkit-user-select:none; 
+	-moz-user-select:none; 
+	-ms-user-select:none; 
+	user-select:none; 
+	float:right
+} 
+
+.popup .popuptext{ 
+	position:absolute; 
+	z-index:10000; 
+	visibility:hidden; 
+	background:#fff; 
+	border:1px solid rgba(0,0,0,.2); 
+	padding:6px 0; 
+	white-space:nowrap; 
+	cursor:default; 
+	-moz-transition:opacity 218ms; 
+	-o-transition:opacity 218ms; 
+	-webkit-transition:opacity 218ms; 
+	transition:opacity 218ms; 
+	-moz-box-shadow:0 2px 4px rgba(0,0,0,.2); 
+	-webkit-box-shadow:0 2px 4px rgba(0,0,0,.2); 
+	box-shadow:0 2px 4px rgba(0,0,0,.2); 
+	right:0
+} 
+
+.popup .show{ 
+	visibility:visible
+} 
+
+.poptable td{ 
+	padding-left:0; 
+	padding-right:10px
+} 
+
+.popdate{ 
+	width:120px
+} 
+
+.popa{ 
+	display:inline-block; 
+	vertical-align:top
+} 
+
+.popb{ 
+	margin-left:10px
+} 
+
+.popdatetext{ 
+	font-size:12px
+} 
+
+.popapply{ 
+	margin-top:20px; 
+	display:none
+} 
+
+.popheader{ 
+	color:#666; 
+	font-size:11px; 
+	font-weight:700; 
+	margin-bottom:1px; 
+	text-transform:uppercase
+} 
+
+.popdown{ 
+	padding:12px 20px; 
+	white-space:nowrap
+} 
+
+@media(min-width:42em){ 
+	.s-layout__content{ 
+	margin-left:4em
+} 
+
+
+} 
+
+@media(max-width:767px){ 
+	.s-layout__content{ 
+	margin-left:0; 
+	display:block
+} 
+
+.s-sidebar__nav{ 
+	margin-left:-20px
+} 
+
+
+} 
+
+@media(max-width:979px){ 
+	.s-sidebar__nav ul{ 
+	top:1em!important; 
+	margin:5px 0 0!important
+} 
+
+.chart.col-1{ 
+	min-height:159px
+} 
+
+.chart.col-2{ 
+	min-height:200px
+} 
+
+
+} 
+
+@media(max-width:642px){ 
+	.popa{ 
+	display:block
+} 
+
+.popb{ 
+	margin-left:unset; 
+	margin-top:10px
+} 
+
+
+} 
+
+@media(min-width:979px){ 
+	.s-layout__content{ 
+	margin-left:15em
+} 
+
+.s-sidebar__trigger{ 
+	display:none!important
+} 
+
+.s-sidebar__nav{ 
+	width:15em; 
+	z-index:0; 
+	left:0
+} 
+
+.s-sidebar__nav ul{ 
+	top:1.3em; 
+	margin:75px 0 0
+} 
+
+.span12{ 
+	width:734px
+} 
+
+
+} 
+
+@media(min-width:1200px){ 
+	.span12{ 
+	width:945px
+} 
+
+.chart.col-1{ 
+	min-height:259px
+} 
+
+.chart.col-2{ 
+	min-height:300px
+} 
+
+
+} 
+
+@media(min-width:1410px){ 
+	.span12{ 
+	width:1154px
+}
+
+
+} 
